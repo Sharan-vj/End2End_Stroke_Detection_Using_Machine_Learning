@@ -1,0 +1,6 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  dataset_url: https://drive.google.com/file/d/1RYiV0-mohCQOa5lImL1Pj3Qi8ugY44UG/view?usp=sharing
+  dataset_raw: artifacts/data_ingestion/data.zip
