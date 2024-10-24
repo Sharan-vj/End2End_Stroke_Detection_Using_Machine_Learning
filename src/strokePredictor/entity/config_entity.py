@@ -16,4 +16,9 @@ class DataValidationConfig:
     dataset_csv: Path
     status_file: str
     all_schema: dict
-    
+
+# Data Transformation Config
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    root_dir: Path
+    dataset_csv: Path

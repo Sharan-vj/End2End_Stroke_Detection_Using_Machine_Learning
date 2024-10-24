@@ -38,3 +38,13 @@ class ConfigManager:
             all_schema=schema
         )
         return data_validation_config
+
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+        create_directory(directory_path=[config.root_dir], log=True)
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir=config.root_dir,
+            dataset_csv=config.dataset_csv
+        )
+        return data_transformation_config
